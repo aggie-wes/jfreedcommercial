@@ -1,0 +1,302 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navy: #12305a;
+  --ink: #1b2433;
+  --muted: #5a6575;
+  --bg: #f7f8fa;
+  --tile: #eef2f7;
+  --line: #d5dce6;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  min-height: 100vh;
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+.mockup-nav {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9rem 1.25rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.mockup-nav a {
+  color: var(--navy);
+  text-decoration: none;
+}
+
+.mockup-nav span {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 28rem;
+  background: #fff;
+}
+
+.hero-copy {
+  padding: 3.25rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--navy);
+}
+
+.tagline {
+  margin-top: 0.9rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.sub {
+  margin-top: 0.55rem;
+  max-width: 28em;
+  color: var(--muted);
+}
+
+.people {
+  margin-top: 1.2rem;
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+
+.people + .people {
+  margin-top: 0.2rem;
+}
+
+.phone {
+  margin-top: 0.85rem;
+}
+
+.phone a {
+  color: var(--navy);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.hero-map {
+  position: relative;
+  min-height: 22rem;
+  background: var(--tile);
+  border-left: 1px solid var(--line);
+}
+
+.hero-map iframe {
+  position: absolute;
+  inset: 0 0 2rem;
+  width: 100%;
+  height: auto;
+  border: 0;
+}
+
+.map-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.45rem 0.8rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  background: #fff;
+}
+
+.skyline-accent {
+  display: flex;
+  justify-content: center;
+  padding: 1.75rem 1rem 0.25rem;
+}
+
+.skyline-accent img {
+  width: min(420px, 80%);
+  height: auto;
+  opacity: 0.55;
+}
+
+.why {
+  width: min(1000px, calc(100% - 40px));
+  margin: 1.5rem auto 0;
+}
+
+.why h2 {
+  font-size: 1.4rem;
+}
+
+.note {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.tiles {
+  margin-top: 1.35rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.tile {
+  background: var(--tile);
+  padding: 1.4rem 1.2rem 1.3rem;
+  border: 1px solid var(--line);
+}
+
+.stat {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.4rem;
+}
+
+.tile p:last-child {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.contact {
+  width: min(500px, calc(100% - 40px));
+  margin: 3.25rem auto 4rem;
+}
+
+.contact h2 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.intro {
+  margin: 0.55rem 0 1.5rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+form {
+  display: grid;
+  gap: 0.35rem;
+}
+
+label {
+  margin-top: 0.7rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.7rem 0.75rem;
+}
+
+textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  background: var(--navy);
+  color: #fff;
+  border-color: var(--navy);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0d2446;
+}
+
+.site-footer {
+  width: min(880px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 1.75rem 0 2.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.trec-notices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  align-items: center;
+  text-align: center;
+}
+
+.trec-notices a {
+  color: var(--navy);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.license-line {
+  margin-top: 1.25rem;
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.45;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-copy {
+    padding: 2.4rem 1.4rem 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.35rem;
+  }
+
+  .hero-map {
+    min-height: 18rem;
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .tiles {
+    grid-template-columns: 1fr;
+  }
+}
